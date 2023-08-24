@@ -2,7 +2,7 @@
 /**
  * invalid_opcode - print out a message when an invalid opcode is encountered
  */
-void invalid_opcode()
+void invalid_opcode(void)
 {
 	fprintf(stderr, "L%d: unknown instruction %s\n", arguments->line_no, arguments->tokens[0]);
 	free_all();
@@ -13,7 +13,7 @@ void invalid_opcode()
 /**
  * get_opcode - gets the instruction to run from the first token.
  */
-void get_opcode()
+void get_opcode(void)
 {
 	int i = 0;
 	instruction_t instructions[] = {

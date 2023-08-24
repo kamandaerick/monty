@@ -2,7 +2,7 @@
 /**
  * execute_opcode - executes an Opcode
  */
-void execute_opcode()
+void execute_opcode(void)
 {
 	stack_t *stack = NULL;
 

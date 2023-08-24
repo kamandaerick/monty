@@ -3,7 +3,7 @@
 * free_args - frees the memory allocated to arguments
 */
 
-void free_args()
+void free_args(void)
 {
 	if (arguments == NULL)
 		return;

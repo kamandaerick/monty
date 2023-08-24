@@ -3,8 +3,10 @@
  * close_file_stream - closes the filestream
  */
 args_t *arguments;
-void close_file_stream()
+
+void close_file_stream(void)
 {
+
 	if (arguments->stream == NULL)
 		return;
 	fclose(arguments->stream);

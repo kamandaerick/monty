@@ -7,8 +7,7 @@
 void add(stack_t **stack, unsigned int line_no)
 {
 	stack_t *temp1;
-       	stack_t *temp2;
-
+	stack_t *temp2;
 	(void) stack;
 	if (arguments->stack_len < 2)
 	{

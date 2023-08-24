@@ -16,7 +16,6 @@ int main(int ac, char *argv[])
 	}
 	initialize_args();
 	get_file_stream(argv[1]);
-	
 	while (getline(&arguments->line, &n, arguments->stream) != -1)
 	{
 		arguments->line_no++;

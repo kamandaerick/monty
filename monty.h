@@ -36,7 +36,9 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+/**
+ * struct cmd_args - arguments
+ */
 typedef struct cmd_args
 {
 	int stack;
@@ -51,21 +53,21 @@ typedef struct cmd_args
 } args_t;
 extern args_t *arguments;
 
-void free_args();
-void free_head();
+void free_args(void);
+void free_head(void);
 void free_stack(stack_t *head);
-void initialize_args();
-void ma_error();
+void initialize_args(void);
+void ma_error(void);
 void get_file_stream(char *f_name);
 void get_file_stream_error(char *f_name);
-void tokenizer();
-void get_opcode();
-void invalid_opcode();
-void free_all();
-void close_file_stream();
-void free_tokens();
-void execute_opcode();
-void delete_node();
+void tokenizer(void);
+void get_opcode(void);
+void invalid_opcode(void);
+void free_all(void);
+void close_file_stream(void);
+void free_tokens(void);
+void execute_opcode(void);
+void delete_node(void);
 
 void nop(stack_t **stack, unsigned int line_no);
 void pall(stack_t **stack, unsigned int line_no);

@@ -2,7 +2,7 @@
 /**
  * initialize_args - this function initializes a ptr to struct args_t
  */
-void initialize_args()
+void initialize_args(void)
 {
 	arguments = malloc(sizeof(args_t));
 	if (arguments == NULL)

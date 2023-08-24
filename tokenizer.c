@@ -2,11 +2,11 @@
 /**
  * tokenizer - tokenizes/parses a line into indpendent strings
  */
-void tokenizer()
+void tokenizer(void)
 {
 	int i = 0;
 	char *token = NULL;
-	char *line_copy= NULL;
+	char *line_copy = NULL;
 
 	line_copy = malloc(sizeof(char) * (strlen(arguments->line) + 1));
 	strcpy(line_copy, arguments->line);

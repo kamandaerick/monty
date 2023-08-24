@@ -2,7 +2,7 @@
 /**
  * free_all - frees the memory allocated to all aruments
  */
-void free_all()
+void free_all(void)
 {
 	close_file_stream();
 	free_tokens();
