@@ -4,6 +4,7 @@ Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 General
+
 What do LIFO and FIFO mean
 What is a stack, and when to use it
 What is a queue, and when to use it
@@ -13,6 +14,7 @@ What is the proper way to use global variables
 
 
 Data structures
+
 Please use the following data structures for this project. Don’t forget to include them in your header file.
 
 /**
@@ -23,13 +25,16 @@ Please use the following data structures for this project. Don’t forget to inc
  *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO
+
  */
+
 typedef struct stack_s
 {
         int n;
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
+
 
 /**
  * struct instruction_s - opcode and its function
@@ -39,6 +44,8 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
+
+
 typedef struct instruction_s
 {
         char *opcode;
@@ -46,13 +53,18 @@ typedef struct instruction_s
 } instruction_t;
 
 Compilation & Output
+
 Your code will be compiled this way:
+
 $ gcc -Wall -Werror -Wextra -pedantic -std=c89 *.c -o monty
+
 
 Any output must be printed on stdout
 Any error message must be printed on stderrThe Monty language
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
+
 Monty byte code files
+
 
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
