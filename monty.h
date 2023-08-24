@@ -66,6 +66,10 @@ void close_file_stream();
 void free_tokens();
 void execute_opcode();
 
+void nop(stack_t **stack, unsigned int line_no);
+void pall(stack_t **stack, unsigned int line_no);
+
+
 FILE *fdopen(int fd, const char *mode);
 
 #endif
