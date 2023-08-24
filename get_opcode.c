@@ -18,7 +18,7 @@ void get_opcode()
 	int i = 0;
 	instruction_t instructions[] = {
 		{"pall", &pall}, {"pop", &pop}, {"nop", &nop},
-		{NULL, NULL}
+		{"push", &push}, {NULL, NULL}
 	};
 
 	if (arguments->no_of_tokens == 0)
