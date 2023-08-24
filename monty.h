@@ -70,6 +70,9 @@ void delete_node();
 void nop(stack_t **stack, unsigned int line_no);
 void pall(stack_t **stack, unsigned int line_no);
 void pop(stack_t **stack, unsigned int line_no);
+void push(stack_t **stack, unsigned int line_no);
+int is_int(char *value);
+
 
 
 
