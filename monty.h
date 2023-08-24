@@ -73,6 +73,9 @@ void pop(stack_t **stack, unsigned int line_no);
 void push(stack_t **stack, unsigned int line_no);
 int is_int(char *value);
 
+void pint(stack_t **stack, unsigned int line_no);
+
+
 
 
 
