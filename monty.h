@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -58,6 +59,12 @@ void ma_error();
 void get_file_stream(char *f_name);
 void get_file_stream_error(char *f_name);
 void tokenizer();
+void get_opcode();
+void invalid_opcode();
+void free_all();
+void close_file_stream();
+void free_tokens();
+void execute_opcode();
 
 FILE *fdopen(int fd, const char *mode);
 

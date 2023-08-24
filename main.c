@@ -16,6 +16,16 @@ int main(int ac, char *argv[])
 	}
 	initialize_args();
 	get_file_stream(argv[1]);
-
+	
+	while (getline(&arguments->line, &n, arguments->stream) != -1)
+	{
+		arguments->line_no++;
+		tokenizer();
+		get_opcode();
+		execute_opcode();
+		free_tokens();
+	}
+	close_file_stream();
+	free_args();
 	return (0);
 }
