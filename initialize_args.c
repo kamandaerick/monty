@@ -4,7 +4,7 @@
  */
 void initialize_args()
 {
-	arguments = malloc(sizeof(arg_t));
+	arguments = malloc(sizeof(args_t));
 	if (arguments == NULL)
 		ma_error();
 	arguments->instruction = malloc(sizeof(instruction_t));
@@ -15,6 +15,6 @@ void initialize_args()
 	arguments->head = NULL;
 	arguments->no_of_tokens = 0;
 	arguments->line_no = 0;
-	arrguments->line = NULL;
+	arguments->line = NULL;
 	arguments->stack_len = 0;
 }

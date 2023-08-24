@@ -49,4 +49,15 @@ typedef struct cmd_args
 	FILE *stream;
 } args_t;
 extern args_t *arguments;
+
+void free_args();
+void free_head();
+void free_stack(stack_t *head);
+void initialize_args();
+void ma_error();
+void get_file_stream(char *f_name);
+void get_file_stream_error(char *f_name);
+
+FILE *fdopen(int fd, const char *mode);
+
 #endif

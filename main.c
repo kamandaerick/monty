@@ -14,6 +14,8 @@ int main(int ac, char *argv[])
 		fprintf(stderr, "USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
+	initialize_args();
+	get_file_stream(argv[1]);
 
 	return (0);
 }
