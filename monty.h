@@ -36,4 +36,17 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+typedef struct cmd_args
+{
+	int stack;
+	stack_t *head;
+	int stack_len;
+	int no_of_tokens;
+	char **tokens;
+	unsigned int line_no;
+	instruction_t *instruction;
+	char *line;
+	FILE *stream;
+} args_t;
+extern args_t *arguments;
 #endif
