@@ -57,6 +57,7 @@ void initialize_args();
 void ma_error();
 void get_file_stream(char *f_name);
 void get_file_stream_error(char *f_name);
+void tokenizer();
 
 FILE *fdopen(int fd, const char *mode);
 
