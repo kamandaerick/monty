@@ -74,6 +74,7 @@ void push(stack_t **stack, unsigned int line_no);
 int is_int(char *value);
 void swap(stack_t **stack, unsigned int line_no);
 void pint(stack_t **stack, unsigned int line_no);
+void add(stack_t **stack, unsigned int line_no);
 
 FILE *fdopen(int fd, const char *mode);
 
